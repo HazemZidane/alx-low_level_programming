@@ -1,18 +1,20 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /*
- * main - Entery point
- *
+ * main - main block
+ * Description: Get a random it with S
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
 
-	fot(i = 0; i < 26; i++)
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-		putchar(alp[1]);
+		putchar(c);
+		c++;
+
 	}
 	putchar('\n');
 	return (0);
