@@ -4,7 +4,7 @@
 /**
  * main - Entery
  *
- * Return : 0
+ * Return : Always 0 (Success)
  */
 int main(void)
 {
@@ -16,6 +16,6 @@ int main(void)
 		c++;
 	}
 
-	putchar('\n');
+	putchar('\n')i
 	return (0);
 }
