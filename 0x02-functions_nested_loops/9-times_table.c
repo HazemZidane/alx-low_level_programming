@@ -3,7 +3,7 @@
 
 /**
  *  * times_table - prints the 9 times table, starting with 0
- *   */
+ */
 void times_table(void)
 {
 	int i, j, k;
@@ -33,7 +33,6 @@ void times_table(void)
 				_putchar((k % 10) + '0');
 			}
 		}
-		
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
