@@ -1,19 +1,24 @@
-#include <stdio.h>
-
-int _strlen(char *);
-
+#include "main.h"
 /**
- *  * main - check the code for Holberton School students.
- *   *
- *    * Return: Always 0.
- */
-int main(void)
+ *  * print_rev - imprime en reversa
+ *   * @s: string
+ *    * return: 0
+ *     */
+void print_rev(char *s)
 {
-	char *str;
-	int len;
+		int longi = 0;
+			int o;
 
-	str = "Holberton!";
-	len = _strlen(str);
-	printf("%d\n", len);
-	return (0);
+				while (*s != '\0')
+						{
+									longi++;
+											s++;
+												}
+					s--;
+						for (o = longi; o > 0; o--)
+								{
+											_putchar(*s);
+													s--;
+														}
+							_putchar('\n');
 }
