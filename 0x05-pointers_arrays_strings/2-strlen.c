@@ -1,21 +1,19 @@
 #include <stdio.h>
-#include "main.h"
+
+int _strlen(char *);
 
 /**
- * * _puts - function that prints a string, followed by a new line, to stdout
- * * @str: pointer value
- * * Return: Always 0 (Success)
+ *  * main - check the code for Holberton School students.
+ *   *
+ *    * Return: Always 0.
  */
-
-void _puts(char *str)
+int main(void)
 {
-	int i = 0;
+	char *str;
+	int len;
 
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
-
-	_putchar('\n');
+	str = "Holberton!";
+	len = _strlen(str);
+	printf("%d\n", len);
+	return (0);
 }
